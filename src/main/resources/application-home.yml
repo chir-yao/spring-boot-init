@@ -1,0 +1,14 @@
+server:
+  port: 8080
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/init
+    username: postgres
+    password: postgres
+    driver-class-name: org.postgresql.Driver
+  jpa:
+    hibernate:
+      # Hibernate ddl auto (create, create-drop, update): with "create-drop" the database
+      # schema will be automatically created afresh for every start of application
+      ddl-auto: update
+    show-sql: true
